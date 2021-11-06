@@ -76,3 +76,7 @@ if len(pos) > 0:
 	print("'A' occurs in the word {0} in this positions: {1}".format(string, str(pos)))
 else:
 	print("There is no 'A's in the word {0}".format(string))
+
+# 7. Slovniky
+scores = {'John': 10, 'Emily': 35, 'Matthew': 50}
+tripled = {key: value*3 for key, value in scores.items()}
