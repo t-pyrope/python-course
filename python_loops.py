@@ -35,10 +35,18 @@ d = {
 	'y': 'yankee',
 	'z': 'zulu'
 }
-
 name = input('What is your name? ').lower()
-
 for letter in name:
 	for key, value in d.items():
 		if letter == key:
 			print(value.capitalize())
+
+# Transponovana matice
+a = [[1,2,3], [4,5,6], [7,8,9]]
+b = []
+for m in a:
+	c = []
+	for num in m:
+		c.append(num)
+	b.append(c)
+print(b)
