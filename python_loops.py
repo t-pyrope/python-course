@@ -51,14 +51,19 @@
 # 	b.append(c)
 # print(b)
 
-# 4. Nakupni seznam
-shopping_list = ['eggs', 'milk', 'bacon']
-item_to_buy = input('What do you want to buy? ').lower()
-for item in shopping_list:
-	if item == item_to_buy:
-		print('You already have this item')
-		print(item_to_buy)
-		break
-shopping_list.append(item_to_buy)
-shopping_list = list(set(shopping_list))
+# # 4. Nakupni seznam
+# shopping_list = ['eggs', 'milk', 'bacon']
+# item_to_buy = input('What do you want to buy? ').lower()
+# for item in shopping_list:
+# 	if item == item_to_buy:
+# 		print('You already have this item')
+# 		print(item_to_buy)
+# 		break
+# shopping_list.append(item_to_buy)
+# shopping_list = list(set(shopping_list))
 
+# 5. List comprehension
+nums = [1,2,3,4,5]
+favorites = ['{0} is my favorite number!'.format(str(x**2)) for x in nums]
+print(nums)
+print(favorites)
