@@ -14,7 +14,7 @@ print('Perl'[2] * 6)
 # 4. Hratky s retezci
 def make_half_upper(str):
 	return str[0:len(str)//2:].upper() + str[len(str)//2::].lower()
-half_upper('Python')
+make_half_upper('Python')
 
 def create_string(str):
 	return str[0] * len(str)
