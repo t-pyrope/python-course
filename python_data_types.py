@@ -7,9 +7,9 @@
 not (5*(3**3) == 900/75)
 
 # 3. Baleni do zavorek nebo mnozeni pismen
-'[[]]'[0:2:] + 'PYTHON' + '[[]]'[2::]
-'Python'[-2::] * 4
-'Perl'[2] * 6
+print('[[]]'[:2] + 'PYTHON' + '[[]]'[2:])
+print('Python'[-2:] * 4)
+print('Perl'[2] * 6)
 
 # 4. Hratky s retezci
 def make_half_upper(str):
@@ -74,15 +74,6 @@ Namespaces are one honking great idea -- let's do more of those!
 """
 alphabet_set = set(alphabet)
 zen_set = set(zen.lower())
-zen_set.remove('-')
-zen_set.remove(',')
-zen_set.remove('.')
-zen_set.remove('*')
-zen_set.remove('\n')
-zen_set.remove('!')
-zen_set.remove("'")
-zen_set.remove(' ')
-
 print('These letters are not in zen of Python: {0}'.format(alphabet_set.difference(zen_set)))
 
 # 10. Odstraneni ze slovniku
