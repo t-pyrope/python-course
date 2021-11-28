@@ -37,16 +37,14 @@ d = {
 }
 name = input('What is your name? ').lower()
 for letter in name:
-	for key, value in d.items():
-		if letter == key:
-			print(value.capitalize())
+	print(d[letter].capitalize())
 
 # 3. Transponovana matice
 a = [[1,2,3], [4,5,6], [7,8,9]]
 b = []
-for m in a:
+for matrix_row in a:
 	c = []
-	for num in m:
+	for num in matrix_row:
 		c.append(num)
 	b.append(c)
 print(b)
@@ -54,13 +52,11 @@ print(b)
 # 4. Nakupni seznam
 shopping_list = ['eggs', 'milk', 'bacon']
 item_to_buy = input('What do you want to buy? ').lower()
-for item in shopping_list:
-	if item == item_to_buy:
-		print('You already have this item')
-		print(item_to_buy)
-		break
-shopping_list.append(item_to_buy)
-shopping_list = list(set(shopping_list))
+if item_to_buy in shopping_list:
+	print('You already have this item')
+	print(item_to_buy)
+else:
+	shopping_list.append(item_to_buy)
 
 # 5. List comprehension
 nums = [1,2,3,4,5]
