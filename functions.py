@@ -43,9 +43,11 @@ meal_vouchers(500, 74)
 
 # 5. Rekurzivni funkce
 def compute_factorial(num):
-	if num < 1:
+	if num < 0:
 		return 'num is not a positive integer'
-	if num != 1:
+	if num == 0:
+		return 1
+	if num != 0:
 		num *= compute_factorial(num - 1)
 	return num
-print(compute_factorial(1))
+print(compute_factorial(5))
