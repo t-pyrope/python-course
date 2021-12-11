@@ -8,7 +8,7 @@ parser.add_argument('letter', help="a letter which is going to be deleted from t
 
 args = parser.parse_args()
 
-word_list = list(str(args.word));
+word_list = list(str(args.word))
 letter = str(args.letter)
 
 for i, el in enumerate(word_list):
