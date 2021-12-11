@@ -1,6 +1,5 @@
 import re
 
-
 def get_name():
 	while True:
 		name = input("Enter your name ")

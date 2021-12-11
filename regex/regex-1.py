@@ -1,5 +1,4 @@
 import re
-import os
 
 # 1. Nahrazeni v textu
 list_original = ["Agalma elegans", "Frillagalma vityazi", "Cordagalma tottoni"]
