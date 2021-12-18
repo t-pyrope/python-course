@@ -11,7 +11,8 @@ parser.add_argument("-c", "--consonants", help="count only consonants", action="
 args = parser.parse_args()
 
 if args.vowels and not args.consonants:
-	vowels = {"a": 0, "e": 0, "i": 0, "o": 0, "u": 0, "y": 0}
+	vowels_list = ["a", "e", "i", "o", "u", "y"]
+	vowels = {v: 0 for v in vowels_list}
 	for letter in args.string:
 		string = str(letter).lower()
 		if string in vowels.keys():
@@ -21,7 +22,8 @@ if args.vowels and not args.consonants:
 		if value > 0:
 			print(key, value)
 elif args.consonants and not args.vowels:
-	consonants = {"b": 0, "c": 0, "d": 0, "f": 0, "g": 0, "h": 0, "j": 0, "k": 0, "l": 0, "m": 0, "n": 0, "p": 0, "q": 0, "r": 0, "s": 0, "t": 0, "v": 0, "w": 0, "x": 0, "z": 0}
+	consonants_list = ["b", "c", "d", "f", "g", "h", "j", "k", "l", "m", "n", "p", "q", "r", "s", "t", "v", "w", "x", "z"]
+	consonants = {c: 0 for c in consonants_list}
 	for letter in args.string:
 		string = str(letter).lower()
 		if string in consonants.keys():
@@ -31,7 +33,8 @@ elif args.consonants and not args.vowels:
 		if value > 0:
 			print(key, value)
 else:
-	letters = {"a": 0, "b": 0, "c": 0, "d": 0, "e": 0, "f": 0, "g": 0, "h": 0, "i": 0, "j": 0, "k": 0, "l": 0, "m": 0, "n": 0, "o": 0, "p": 0, "q": 0, "r": 0, "s": 0, "t": 0, "u": 0, "v": 0, "w": 0, "x": 0, "y": 0, "z": 0}
+	letters_list = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"]
+	letters = {l: 0 for l in letters_list}
 	for letter in args.string:
 		string = str(letter).lower()
 		if string in letters.keys():
