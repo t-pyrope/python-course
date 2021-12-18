@@ -32,9 +32,9 @@ try:
 	numbers_in_name = [i for i, letter in enumerate(string_list) if letter.isdigit()]
 	if len(numbers_in_name) > 0:
 		raise NumberInUsername
-	elif space in string_list:
+	if space in string_list:
 		raise SpacesInUsername
-	elif string_list[0].islower():
+	if string_list[0].islower():
 		raise UsernameNotCapitalized
 except NumberInUsername:
 	print(('Username contains numbers'))
