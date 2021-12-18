@@ -14,10 +14,10 @@ occurence_num = 0
 pos = 0
 
 while True:
-	foundPos = string.find(substring, pos)
-	if foundPos == -1:
-		break;
+	found_pos = string.find(substring, pos)
+	if found_pos == -1:
+		break
 	occurence_num += 1
-	pos = foundPos + 1
+	pos = found_pos + 1
 
 print("String", substring, "occured", occurence_num, "times in string", string)
