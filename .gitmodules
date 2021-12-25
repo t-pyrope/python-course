@@ -1,0 +1,3 @@
+[submodule "venn_diagram"]
+	path = venn_diagram
+	url = https://github.com/t-pyrope/venn_diagram.git
